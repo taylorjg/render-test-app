@@ -25,7 +25,7 @@ export const Main = () => {
     <form>
       <StyledFormLayout>
         <TextField
-          sx={{ w: "20rem" }}
+          sx={{ width: 250 }}
           id="standard-basic"
           label="Input"
           variant="standard"

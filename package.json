@@ -1,7 +1,7 @@
 {
   "name": "render-test-app",
   "description": "Little test app (React, Node.js) to try out render.com",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.0",

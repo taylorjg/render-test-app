@@ -1,10 +1,12 @@
 import { useState } from "react"
 import { Button, Chip, TextField } from "@mui/material"
 import { StyledButtonRow, StyledFormLayout } from "./Main.styles"
+import { useStringReverser } from "./use-string-reverser"
 
 export const Main = () => {
   const [inputText, setinputText] = useState("")
   const [reversedText, setReversedText] = useState()
+  const { reverseString } = useStringReverser()
 
   const onChangeInput = event => {
     const value = event.target.value
@@ -12,7 +14,7 @@ export const Main = () => {
   }
 
   const onReverse = () => {
-    setReversedText(Array.from(inputText).reverse().join(""))
+    setReversedText(reverseString(inputText))
     setinputText("")
   }
 

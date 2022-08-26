@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Button, Chip, TextField } from "@mui/material"
+import LoadingButton from "@mui/lab/LoadingButton"
 import { StyledButtonRow, StyledFormLayout } from "./Main.styles"
 import { useStringReverser } from "./use-string-reverser"
 import { useToast } from "./use-toast"
@@ -45,16 +46,18 @@ export const Main = () => {
           variant="standard"
           value={inputText}
           onChange={onChangeInput}
+          autoComplete="off"
         />
         <StyledButtonRow>
-          <Button
+          <LoadingButton
             variant="contained"
             size="small"
             type="submit"
-            disabled={callActive}
+            loading={callActive}
+            disabled={!inputText}
           >
             Reverse
-          </Button>
+          </LoadingButton>
           <Button
             variant="contained"
             size="small"
@@ -64,7 +67,6 @@ export const Main = () => {
             Reset
           </Button>
         </StyledButtonRow>
-        {callActive && <div>CALL ACTIVE</div>}
         {reversedText && (
           <Chip label={reversedText} variant="outlined" />
         )}

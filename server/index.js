@@ -7,7 +7,10 @@ const path = require("path")
 const PORT = process.env.PORT ?? 3030
 const BUILD_FOLDER = path.resolve(__dirname, "..", "build")
 
-const postReverse = (req, res) => {
+const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
+
+const postReverse = async (req, res) => {
+  await delay(500)
   const inputText = req.body.inputText
   const outputText = Array.from(inputText).reverse().join("")
   log.info("[postReverse]", { inputText, outputText })

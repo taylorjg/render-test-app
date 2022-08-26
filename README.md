@@ -9,10 +9,14 @@ Heroku [recently announced](https://blog.heroku.com/next-chapter) that they are 
 * ~~Add a basic Express app to serve out the single page application~~
 * ~~Deploy the web app to Render~~
 * ~~Add tests~~
+* ~~Add server-side logging~~
+* ~~Add Google Analytics~~
 * Move the reversing of the string from client-side to server-side
 * Add a PostgreSQL database to record each request to reverse a string
-* Add server-side logging
-* Add Google Analytics
+* Use GitHub Actions to run tests and deploy to Render
+  * https://community.render.com/t/github-actions-render/800
+  * https://feedback.render.com/features/p/only-deploy-after-ci-tests-pass
+  * https://render.com/docs/deploy-hooks
 
 # Links
 

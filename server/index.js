@@ -11,7 +11,7 @@ const postReverse = (req, res) => {
   const inputText = req.body.inputText
   const outputText = Array.from(inputText).reverse().join("")
   log.info("[postReverse]", { inputText, outputText })
-  res.json({ outputString: outputText })
+  res.json({ outputText })
 }
 
 const main = () => {

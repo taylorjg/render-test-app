@@ -13,8 +13,10 @@ export const Main = () => {
     setinputText(value)
   }
 
-  const onReverse = () => {
-    setReversedText(reverseString(inputText))
+  const onReverse = async () => {
+    const outputText = await reverseString(inputText)
+    console.log("[onReverse]", outputText)
+    setReversedText(outputText)
     setinputText("")
   }
 

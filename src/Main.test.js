@@ -2,18 +2,18 @@ import { render, screen } from "@testing-library/react"
 import userEvent from "@testing-library/user-event";
 import App from "./App"
 
-test("Can enter some input text and reverse it", () => {
+test("can complete the form and invoke the web service", async () => {
   render(<App />)
-  userEvent.type(screen.getByLabelText("Input Text"), "Hello")
+  userEvent.type(screen.getByLabelText("Input Text"), "hello")
   userEvent.click(screen.getByRole("button", { name: "Reverse" }))
-  expect(screen.getByText("olleH")).toBeInTheDocument()
+  expect(await screen.findByText("hello-returned-by-mock-handler")).toBeInTheDocument()
 })
 
-test("Can reset the form", () => {
+test("can reset the form", async () => {
   render(<App />)
-  userEvent.type(screen.getByLabelText("Input Text"), "Hello")
+  userEvent.type(screen.getByLabelText("Input Text"), "hello")
   userEvent.click(screen.getByRole("button", { name: "Reverse" }))
-  expect(screen.getByText("olleH")).toBeInTheDocument()
+  expect(await screen.findByText("hello-returned-by-mock-handler")).toBeInTheDocument()
   userEvent.click(screen.getByRole("button", { name: "Reset" }))
-  expect(screen.queryByText("olleH")).not.toBeInTheDocument()
+  expect(screen.queryByText("hello-returned-by-mock-handler")).not.toBeInTheDocument()
 })

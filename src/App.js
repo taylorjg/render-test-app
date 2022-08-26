@@ -1,5 +1,6 @@
 import { createTheme, Container, CssBaseline, ThemeProvider } from "@mui/material"
 import { Main } from "./Main"
+import { Version } from "./Verson"
 
 const darkTheme = createTheme({
   palette: {
@@ -13,6 +14,7 @@ const App = () => {
       <CssBaseline />
       <Container sx={{ mt: '2rem' }}>
         <Main />
+        <Version />
       </Container>
     </ThemeProvider>)
 }

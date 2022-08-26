@@ -1,5 +1,6 @@
 {
   "name": "render-test-app",
+  "description": "Little test app (React, Node.js) to try out render.com",
   "version": "0.0.2",
   "private": true,
   "dependencies": {

@@ -11,7 +11,7 @@ Heroku [recently announced](https://blog.heroku.com/next-chapter) that they are 
 * ~~Add tests~~
 * ~~Add server-side logging~~
 * ~~Add Google Analytics~~
-* Move the reversing of the string from client-side to server-side
+* ~~Move the reversing of the string from client-side to server-side~~
 * Add a PostgreSQL database to record each request to reverse a string
 * Use GitHub Actions to run tests and deploy to Render
   * https://community.render.com/t/github-actions-render/800

@@ -13,9 +13,9 @@ export const Main = () => {
     setinputText(value)
   }
 
-  const onReverse = async () => {
+  const onSubmit = async event => {
+    event.preventDefault()
     const outputText = await reverseString(inputText)
-    console.log("[onReverse]", outputText)
     setReversedText(outputText)
     setinputText("")
   }
@@ -26,18 +26,18 @@ export const Main = () => {
   }
 
   return (
-    <form>
+    <form onSubmit={onSubmit}>
       <StyledFormLayout>
         <TextField
           sx={{ width: 250 }}
-          id="standard-basic"
-          label="Input"
+          name="inputText"
+          label="Input Text"
           variant="standard"
           value={inputText}
           onChange={onChangeInput}
         />
         <StyledButtonRow>
-          <Button variant="contained" size="small" onClick={onReverse}>Reverse</Button>
+          <Button variant="contained" size="small" type="submit">Reverse</Button>
           <Button variant="contained" size="small" color="error" onClick={onReset}>Reset</Button>
         </StyledButtonRow>
         {reversedText && (

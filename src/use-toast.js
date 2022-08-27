@@ -12,9 +12,9 @@ export const useToast = () => {
     setSeverity(severity)
   }
 
-  const showSuccess = (message) => showCommon(message, "success")
-  const showInfo = (message) => showCommon(message, "info")
-  const showWarning = (message) => showCommon(message, "warning")
+  // const showSuccess = (message) => showCommon(message, "success")
+  // const showInfo = (message) => showCommon(message, "info")
+  // const showWarning = (message) => showCommon(message, "warning")
   const showError = (message) => showCommon(message, "error")
 
   const onClose = () => {
@@ -45,9 +45,9 @@ export const useToast = () => {
 
   return {
     renderToast,
-    showSuccess,
-    showInfo,
-    showWarning,
+    // showSuccess,
+    // showInfo,
+    // showWarning,
     showError
   }
 }

@@ -31,7 +31,7 @@ export const useToast = () => {
     return (
       <Snackbar
         open={open}
-        autoHideDuration={5000}
+        autoHideDuration={3000}
         onClose={onClose}
         anchorOrigin={anchorOrigin}
         TransitionComponent={Slide}

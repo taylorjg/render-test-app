@@ -17,8 +17,7 @@ The deployed [web app](https://render-test-app-iz7h.onrender.com) takes 30 secon
 * ~~Add Google Analytics~~
 * ~~Move the reversing of the string from client-side to server-side~~
 * ~~Use GitHub Actions to run tests and deploy to Render~~
-  * https://github.com/marketplace/actions/render-deploy-action
-* Add a PostgreSQL database to record each request to reverse a string
+* ~~Add a PostgreSQL database to record each request to reverse a string~~
 
 # Links
 

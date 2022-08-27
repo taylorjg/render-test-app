@@ -4,7 +4,6 @@ const pgp = require('pg-promise')()
 const configurePostgres = async uri => {
 
   const db = pgp(uri)
-  log.info("[configurePostgres]", "db:", db)
 
   const createApiCallsRecord = async (inputText, outputText) => {
     const id = await db.one(

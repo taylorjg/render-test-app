@@ -22,7 +22,9 @@ The deployed [web app](https://render-test-app-iz7h.onrender.com) takes 30 secon
 # Links
 
 * [Cloud Application Hosting for Developers | Render](https://render.com/)
-* [Render Deploy action](https://github.com/marketplace/actions/render-deploy-action)
+  * [Render vs Heroku](https://render.com/render-vs-heroku-comparison)
+  * [Migrate from Heroku to Render](https://render.com/docs/migrate-from-heroku)
+  * [Render Deploy action](https://github.com/marketplace/actions/render-deploy-action)
 * [Cloud Application Platform | Heroku](https://www.heroku.com/)
-* [Heroku’s Next Chapter](https://blog.heroku.com/next-chapter)
-* [Deprecation of Heroku Free Resources](https://devcenter.heroku.com/changelog-items/2461)
+  * [Heroku’s Next Chapter](https://blog.heroku.com/next-chapter)
+  * [Deprecation of Heroku Free Resources](https://devcenter.heroku.com/changelog-items/2461)
